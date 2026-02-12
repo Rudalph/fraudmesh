@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Maven_Pro } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar"
+
 
 const mavenpro = Maven_Pro({
   variable: "--font-quicksand",
@@ -9,8 +9,8 @@ const mavenpro = Maven_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "FraudMesh",
-  description: "Real-Time AI-Powered Fraud Detection & Prevention Network",
+  title: "Validium",
+  description: "Real-Time ML-Powered Fraud Detection",
 };
 
 export default function RootLayout({
@@ -23,7 +23,6 @@ export default function RootLayout({
       <body
         className={mavenpro.className}
       >
-        <Navbar />
         {children}
       </body>
     </html>
